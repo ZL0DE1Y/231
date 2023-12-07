@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<body>
+<head>
+  <title>Ассоциации спортивных и корпоративных мероприятий.ru</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Горизонтальное меню для сайта - примеры оформления" />
+  <meta name="author" content="HTML5BOOK" />
+  <meta name=”viewport” content=”width=device-width; initial-scale=1.0″>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="CSS.css" />
+  
+  <header>
+    <h2 class="funny-title section-title">Ассоциация спортивных и корпоративных мероприятий</h2>
+    
+</header>
+<ul class="menu-main">
+  <li><a href="О КОМПАНИИ.html">О КОМПАНИИ</a></li>
+  <li><a href="НОВОСТИ.html">НОВОСТИ</a></li>
+  <li><a href="Услуги.html">УСЛУГИ</a></li>
+  <li><a href="Фото.html">ФОТО</a></li>
+  <li><a href="СМИ О НАС.html">СМИ О НАС</a></li>
+  <li><a href="Контакты.html">КОНТАКТЫ</a></li>
+</ul>
+
+
+  <script language="javascript" type="text/javascript">
+    var Ticker = new Class({
+      setOptions: function(options) {
+        this.options = Object.extend({
+          speed: 5000,
+          delay: 5000,
+          direction: 'vertical',
+          onComplete: Class.empty,
+          onStart: Class.empty
+        }, options || {});
+      },
+      initialize: function(el,options){
+        this.setOptions(options);
+        this.el = $(el);
+        this.items = this.el.getElements('li');
+        var w = 0;
+        var h = 0;
+        if(this.options.direction.toLowerCase()=='horizontal') {
+          h = this.el.getSize().size.y;
+          this.items.each(function(li,index) {
+            w += li.getSize().size.x;
+          });
+        } else {
+          w = this.el.getSize().size.x;
+          this.items.each(function(li,index) {
+            h += li.getSize().size.y;
+          });
+        }
+        this.el.setStyles({
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: w,
+          height: h
+        });
+        this.fx = new Fx.Styles(this.el,{duration:this.options.speed,onComplete:function() {
+          var i = (this.current==0)?this.items.length:this.current;
+          this.items[i-1].injectInside(this.el);
+          this.el.setStyles({
+            left:0,
+            top:0
+          });
+        }.bind(this)});
+        this.current = 0;
+        this.next();
+      },
+      next: function() {
+        this.current++;
+        if (this.current >= this.items.length) this.current = 0;
+        var pos = this.items[this.current];
+        this.fx.start({
+          top: -pos.offsetTop,
+          left: -pos.offsetLeft
+        });
+        this.next.bind(this).delay(this.options.delay+this.options.speed);
+      }
+    });
+    var hor = new Ticker('TickerVertical',{speed:1000,delay:4000,direction:'horizontal'});
+  </script>  
+   <div id="NewsTicker">
+    <div id="New">
+    <h1>НОВОСТИ </h1>
+<div id="NewsVertical">
+<ul id="TickerVertical">
+  <li>
+      <img src="real-barselona-0-1_16777959301626225178.jpg" border="0" class="NewsImg"/>
+      <span class="NewsTitle">
+      <a href="">«Реал» выдал худший домашний матч в сезоне. Но гол «Барсы» — комедия</a>            </span>
+      «Реал» и «Барселона» встретились друг с другом в третий раз в сезоне. И все три встречи прошли в разных турнирах! На этот раз команды сыграли в первом матче полуфинала Кубка Испании. <span class="NewsFooter"><strong>Опубликовано 28 февраля</strong> - </span>        </li>
+  <li>
+   <img src="v-loko-vsyo-eschyo-zlyatsya-iz-za-sudejstva_16777740961633667314.jpg" border="0" class="NewsImg"/>
+      <span class="NewsTitle">
+      <a href="">В «Локо» всё ещё злятся из-за судейства со «Спартаком»? Теперь клуб поддел судей</a>            </span>
+      В РФС вынесли решения по судейству в ответном матче Кубка России — «Локо» ответил видео.
+«Спартак» обыграл «Локомотив» по сумме двух матчей в Пути РПЛ Кубка России. Первая игра завершилась победой красно-белых со счётом 1:0, а вторая с разницей в два мяча – 4:2. После ответного матча у представителей «Локомотива» накопилось много вопросов по судейству.
+Железнодорожники обратились в экспертно-судейскую комиссию РФС с просьбой дать оценку нескольким эпизодам и получили, судя по всему, неутешительные ответы
+<span class="NewsFooter"><strong></strong> -</span>        </li>
+  <li>
+      <img src="jRKXRsJZhdI.jpg" border="0" class="NewsImg"/>
+      <span class="NewsTitle">
+      <a href="https://vk.com/tabashnikov2016">Табашников Илья Александрович</a>            </span>
+    Программист <span class="NewsFooter"><strong></strong> - </span>        </li>
+    <li>
+      <img src="2023-02-28_14-26-03.png" border="0" class="NewsImg"/>
+      <span class="NewsTitle"><a href=""> ХИМКАХ СОСТОЯЛАСЬ ПРЕЗЕНТАЦИЯ ПЕСНИ «БЕZОТВЕТНЫЙ ВАЛЬС» </a></span>
+      Участница вокально-инструментального ансамбля «Феникс» химкинского дома культуры «Контакт» Галина Пахомова представила песню «БеZответный вальс», посвященную безвременно ушедшим детям ЛНР и ДНР. Песня была написана ещё в 2022 году на стихи Светланы Абакумовой. Музыку написал руководитель коллектива Анатолий Макаров. <span class="NewsFooter"><strong>Опубликовано 28 февраля</strong> - </span>        </li>
+</ul>
+</div>
+
+</div>
+<footer>
+    <p>Компания Ассоциация спортивных и карпоративных мероприятий. Все права защищены.</p>
+</section>
+
+<div class="nesolestag-enadenud">
+  <h3 style="text-align:center;">Контакты</h3>
+
+  <div class="ico-wrap"> <i class="fa fa-map-marker ico-contact"></i>
+  </div>
+  <div class="meanous-andscoev">
+  <h4 class="aio-icon-title">Юридический адрес:</h4>
+  <div class="aio-icon-description">
+  3486452, г. Тюмень, ул. Ленина,
+  <br>дом 14, литер D, Кабинет # 31</div>
+  </div>
+
+  <span class="kesednsoled"></span>
+
+  <div class="ico-wrap"> <i class="fa fa-clock-o ico-contact"></i>
+  </div>
+  <div class="meanous-andscoev">
+  <h4 class="aio-icon-title">График работы складов и офисов компании:</h4>
+  <div class="aio-icon-description">
+  пн.-сб. с 10:00 до 21:00, с перерывом на обед
+  <br>Без выходных</div>
+  </div>
+
+  <span class="kesednsoled"></span>
+
+  <div class="ico-wrap">
+  <i class="fa fa-envelope ico-contact"></i>
+  </div>
+  <div class="meanous-andscoev">
+  <h4 class="aio-icon-title">Электронная почта:</h4>
+  <div class="aio-icon-description">
+  zprmet_ru.@mail.ru
+  <br>desantura.@mail.ru</div>
+  </div>
+
+  <span class="kesednsoled"></span>
+
+  <div class="ico-wrap">
+  <i class="fa fa-phone ico-contact"></i>
+  </div>
+  <div class="meanous-andscoev">
+  <h4 class="aio-icon-title">Связь по телефону:</h4>
+  <div class="aio-icon-description">
+  8 (423) 031-53-78
+  <br>8 (723) 904-52-72</div>
+  </div>
+
+  <span class="kesednsoled"></span>
+
+</div>
+  
+      </div> 
+  </footer>
+  

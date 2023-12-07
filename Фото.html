@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Галерея со слайдером | Демонстрация для сайта RUSELLER.COM</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<script src="js/Opium_400.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('h1,h2,.fp_close,.reference,p');
+		</script>
+		
+		<link type="text/css" href="jquery.ui.theme.css" rel="stylesheet" />
+		<link type="text/css" href="jquery.ui.core.css" rel="stylesheet" />
+        <link type="text/css" href="jquery.ui.slider.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+		
+        <style type="text/css">
+			span.reference{
+				font-family:Arial;
+				position:fixed;
+				left:10px;
+				bottom:10px;
+				font-size:13px;
+			}
+			span.reference a{
+				color:#fff;
+				margin-right:20px;
+				text-transform:uppercase;
+			}
+			span.reference a:hover{
+				border-bottom:1px solid #ddd;
+			}
+		</style>
+    </head>
+    <body>
+		<header>
+			<h2 class="funny-title section-title">Ассоциация спортивных и корпоративных мероприятий</h2>
+			
+		
+		  </header>
+		  <ul class="menu-main"> 
+			<li><a href="О КОМПАНИИ.html">О КОМПАНИИ</a></li>
+			<li><a href="НОВОСТИ.html">НОВОСТИ</a></li>
+			<li><a href="Услуги.html">УСЛУГИ</a></li>
+			<li><a href="Фото.html">ФОТО</a></li>
+			<li><a href="СМИ О НАС.html">СМИ О НАС</a></li>
+			<li><a href="Контакты.html">КОНТАКТЫ</a></li>
+		  </ul>
+		  <div id="fp_gallery" class="fp_gallery">
+			
+			<p>Выберите мероприятие</p>
+
+			<ul id="fp_galleryList" class="fp_galleryList">
+				<li> Тимбилдинг</li>
+				<li>Спартакиада</li>
+				<li>Москва</li>
+			</ul>
+			<div id="fp_thumbContainer">
+				<div id="fp_thumbScroller">
+					<div class="container">
+						<div class="content">
+							<div> <a  href="#" ><img img src="DSC_0031.jpg" alt=""/></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0040.jpg" alt="DSC_0040.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0045.jpg" alt="DSC_0045.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0053.jpg" alt="DSC_0053.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0070.jpg" alt="DSC_0070.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0083.jpg" alt="DSC_0083.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0126.jpg" alt="DSC_0126.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0136.jpg" alt="DSC_0136.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0139.jpg" alt="DSC_0139.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0143.jpg" alt="DSC_0143.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0148.jpg" alt="DSC_0148.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0168.jpg" alt="DSC_0168.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0180.jpg" alt="DSC_0180.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0222.jpg" alt="DSC_0222.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0237.jpg" alt="DSC_0237.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0244.jpg" alt="DSC_0244.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0299.jpg" alt="DSC_0299.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0300.jpg" alt="DSC_0300.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0314.jpg" alt="DSC_0314.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0316.jpg" alt="DSC_0316.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0331.jpg" alt="DSC_0331.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0333.jpg" alt="DSC_0333.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0511.jpg" alt="DSC_0511.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0522.jpg" alt="DSC_0522.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0524.jpg" alt="DSC_0524.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0626.jpg" alt="DSC_0626.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0628.jpg" alt="DSC_0628.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="DSC_0641.jpg" alt="DSC_0641.jpg" class="thumb" /></a></div>
+						</div>
+
+					</div>
+					<div class="container">
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6570.jpg" alt="7A77Y6570.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6574.jpg" alt="7A77Y6574.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6603.jpg" alt="7A77Y6603.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6614.jpg" alt="7A77Y6614.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6622.jpg" alt="7A77Y6622.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6640.jpg" alt="7A77Y6640.jpg" class="thumb" /></a></div>
+						</div>						
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6650.jpg" alt="7A77Y6650.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6668.jpg" alt="7A77Y6668.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6688.jpg" alt="7A77Y6688.jpg" class="thumb" /></a></div>
+						</div>						
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6733.jpg" alt="7A77Y6733.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6750.jpg" alt="7A77Y6750.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6894.jpg" alt="7A77Y6894.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y6999.jpg" alt="7A77Y6999.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7011.jpg" alt="7A77Y7011.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7020.jpg" alt="7A77Y7020.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7053.jpg" alt="7A77Y7053.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7078.jpg" alt="7A77Y7078.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7143.jpg" alt="7A77Y7143.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7168.jpg" alt="7A77Y7168.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7230.jpg" alt="7A77Y7230.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7381.jpg" alt="7A77Y7381.jpg" class="thumb" /></a></div>
+						</div>
+						<div class="content">
+							<div><a href="#"><img src="7A77Y7463.jpg" alt="7A77Y7463.jpg" class="thumb" /></a></div>
+						</div>
+
+
+					</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div id="fp_scrollWrapper" class="fp_scrollWrapper">
+				<span id="fp_prev_thumb" class="fp_prev_thumb"></span>
+				<div id="slider" class="slider"></div>
+				<span id="fp_next_thumb" class="fp_next_thumb"></span>
+			</div>
+
+			<div id="fp_overlay" class="fp_overlay"></div>
+			<div id="fp_loading" class="fp_loading"></div>
+			<div id="fp_next" class="fp_next"></div>
+			<div id="fp_prev" class="fp_prev"></div>
+			<div id="fp_close" class="fp_close">ЗАКРЫТЬ</div>
+		</div>
+        <div class="nesolestag-enadenud">
+			<h3 style="text-align:center;">Контакты</h3>
+		  
+			<div class="ico-wrap"> <i class="fa fa-map-marker ico-contact"></i>
+			</div>
+			<div class="meanous-andscoev">
+			<h4 class="aio-icon-title">Юридический адрес:</h4>
+			<div class="aio-icon-description">
+			3486452, г. Тюмень, ул. Ленина,
+			<br>дом 14, литер D, Кабинет # 31</div>
+			</div>
+		  
+			<span class="kesednsoled"></span>
+		  
+			<div class="ico-wrap"> <i class="fa fa-clock-o ico-contact"></i>
+			</div>
+			<div class="meanous-andscoev">
+			<h4 class="aio-icon-title">График работы складов и офисов компании:</h4>
+			<div class="aio-icon-description">
+			пн.-сб. с 10:00 до 21:00, с перерывом на обед
+			<br>Без выходных</div>
+			</div>
+		  
+			<span class="kesednsoled"></span>
+		  
+			<div class="ico-wrap">
+			<i class="fa fa-envelope ico-contact"></i>
+			</div>
+			<div class="meanous-andscoev">
+			<h4 class="aio-icon-title">Электронная почта:</h4>
+			<div class="aio-icon-description">
+			zprmet_ru.@mail.ru
+			<br>desantura.@mail.ru</div>
+			</div>
+		  
+			<span class="kesednsoled"></span>
+		  
+			<div class="ico-wrap">
+			<i class="fa fa-phone ico-contact"></i>
+			</div>
+			<div class="meanous-andscoev">
+			<h4 class="aio-icon-title">Связь по телефону:</h4>
+			<div class="aio-icon-description">
+			8 (423) 031-53-78
+			<br>8 (723) 904-52-72</div>
+			</div>
+		  
+			
+		<!--  JAVASCRIPT -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//кэшируем 
+				//основной контейнер галереи
+				var $fp_gallery			= $('#fp_gallery')
+				//покрывной слой при показе большого изображения
+				var $fp_overlay			= $('#fp_overlay');
+				//статус загрузки изображения
+				var $fp_loading			= $('#fp_loading');
+				//кнопки "следующее" и "предыдущее"
+				var $fp_next			= $('#fp_next');
+				var $fp_prev			= $('#fp_prev');
+				//кнопка "закрыть"
+				var $fp_close			= $('#fp_close');
+				//основной контейнер для структуры миниатюр
+				var $fp_thumbContainer 	= $('#fp_thumbContainer');
+				//контейнер для слайдера jquery ui
+				var $fp_scrollWrapper	= $('#fp_scrollWrapper');
+				//общее количество изображений
+				var nmb_images=0;
+				//индекс выбранной галереи
+				var gallery_idx=-1;
+				//контейнер для полоски прокрутки
+				var $fp_thumbScroller	= $('#fp_thumbScroller');
+				//слайдер jquery ui
+				var $slider				= $('#slider');
+				//ссылки на галереи (города)
+				var $fp_galleries		= $('#fp_galleryList > li');
+				//текущее показываемое изображение
+				var current				= 0;
+				
+				//флаги управления:
+				//предотвращаем быстрое нажатие на "следующее" и "предыдущее"
+				var photo_nav			= true;
+				
+				//пользователь нажал на городе / галерее;
+				$fp_galleries.bind('click',function(){
+					$fp_galleries.removeClass('current');
+					var $gallery 		= $(this);
+					$gallery.addClass('current');
+					var gallery_index 	= $gallery.index();
+					if(gallery_idx == gallery_index) return;
+					gallery_idx			= gallery_index;
+					//закрыть галерею и слайдер, если они открыты
+					if($fp_thumbContainer.data('opened')==true){
+						$fp_scrollWrapper.fadeOut();
+						$fp_thumbContainer.stop()
+										  .animate({'height':'0px'},200,function(){
+											openGallery($gallery);
+										  });
+					}				  
+					else
+						openGallery($gallery);
+				});
+					
+				//открыть галерею после нажатия на город / галерею
+				function openGallery($gallery){
+					//текущая позиция сбрасывается
+					current				= 0;				  
+					//контейнер div, который содержит изображение
+					var $fp_content_wrapper = $fp_thumbContainer.find('.container:nth-child('+parseInt(gallery_idx+1)+')');
+					//прячем все остальные контейнеры миниатюр
+					$fp_thumbContainer.find('.container').not($fp_content_wrapper).hide();
+					//и выводим только один выбранный
+					$fp_content_wrapper.show();
+					//общее количество изображений
+					nmb_images			= $fp_content_wrapper.children('div').length;
+					//переменные для вычисления ширины,
+					//отступа слева
+					//и отступа справа 
+					var w_width 	= 0;
+					var padding_l	= 0;
+					var padding_r	= 0;
+					//центр экрана
+					var center		= $(window).width()/2;
+					var one_divs_w  = 0;
+					/*
+					Примечание:
+					отступ слева - это положение центра минус половина ширины первого элемента div
+					отступ справа - это положение центра минус половина ширины последнего элемента div
+					*/
+					$fp_content_wrapper.children('div').each(function(i){
+						var $div 		= $(this);
+						var div_width	= $div.width(); 
+						w_width			+=div_width;
+						//если это первый элемент, вычисляем отступ слева
+						if(i==0)
+							padding_l = center - (div_width/2);
+						//если это последний элемент, вычисляем отступ справа
+						if(i==(nmb_images-1)){
+							padding_r = center - (div_width/2);
+							one_divs_w= div_width;
+						}	
+					}).end().css({
+						'width'				: w_width + 'px',
+						'padding-left' 		: padding_l + 'px',
+						'padding-right' 	: padding_r + 'px'
+					});
+					
+					//прокручиваем все налево;
+					$fp_thumbScroller.scrollLeft(w_width);
+					
+					//инициализируем слайдер
+					$slider.slider('destroy').slider({
+						orientation	: 'horizontal',
+						max			: w_width -one_divs_w,//общая ширина минус ширина одного элемента div
+						min			: 0,
+						value		: 0,
+						slide		: function(event, ui) {
+							$fp_thumbScroller.scrollLeft(ui.value);
+						},
+						stop: function(event, ui) {
+							//когда прокрутка останавливается,
+							//ближайшее к центру экрана изображение 
+							//центрируется
+							checkClosest();
+						}
+					});
+					//открываем галерею и показываем слайдер
+					$fp_thumbContainer.animate({'height':'240px'},200,function(){
+						$(this).data('opened',true);
+						$fp_scrollWrapper.fadeIn();
+					});
+					
+					//прокручиваем все направо;
+					$fp_thumbScroller.stop()
+									 .animate({'scrollLeft':'0px'},2000,'easeInOutExpo');
+
+					//пользователь нажал на элементе div (изображении)
+					$fp_content_wrapper.find('.content')
+									 .bind('click',function(e){
+						var $current 	= $(this);
+						//получаем индекс текущего выбранного изображения
+						current			= $current.index();
+						//центрируем и показываем изображение
+						//второй параметр, установленный в значение true, означает,
+						//что мы хотим выводить изображение после того, как миниатюра будет отцентрирована на экране
+						centerImage($current,true,600);
+						e.preventDefault();
+					});					
+				}
+				
+				//при прокрутке галереи нужно также прокручивать слайдер
+				$fp_thumbScroller.scroll(function(){
+					$slider.slider('value',parseInt($fp_thumbScroller.scrollLeft(),10));
+				});
+				
+				//пользователь нажал кнопку "следующее" (режим просмотра)
+				$fp_next.bind('click',function(){
+					if(photo_nav){
+						photo_nav = false;
+					navigate(1);
+					}	
+				});
+				
+				//пользователь нажал кнопку "предыдущее" (режим просмотра)
+				$fp_prev.bind('click',function(){
+					if(photo_nav){
+						photo_nav = false;
+					navigate(0);
+					}	
+				});
+				
+				//пользователь нажал кнопку "следующее" (режим миниатюр)
+				$('#fp_next_thumb').click(function(){
+					slideThumb(1);
+				});
+				
+				//пользователь нажал кнопку "предыдущее" (режим миниатюр)
+				$('#fp_prev_thumb').click(function(){
+					slideThumb(0);
+				});
+				
+				//пользователь нажал кнопку "закрыть"
+				$fp_close.bind('click',function(){
+					if(!photo_nav) return;
+					//прокручиваем окно наверх
+					var windowS 		= $(window).scrollTop();
+					//большое изображение, которое было открыто
+					var $large_img		= $('#fp_preview');
+					//текущая миниатюра
+					var $current 		= $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+														   .find('.content:nth-child('+parseInt(current+1)+')');
+					//значение смещения текущей миниатюры
+					var current_offset	= $current.offset();
+					//большое изображение будет сворачиваться с анимацией по направлению к центру,
+					//после чего оно будет полностью удалено из структуры DOM
+					$large_img.stop().animate({
+						'top'			: current_offset.top + windowS + 'px',
+						'left'			: $(window).width()/2 - $current.width()/2 + 'px',
+						'width'			: $current.width() + 'px',
+						'height'		: $current.height() + 'px',
+						'opacity'		: 0
+					},800,function(){
+						$(this).remove();
+					//прячем покрывающий слой, и кнопки "предыдущее" и "следующее"
+					hidePreviewFunctions();
+				});
+				
+					
+				});
+				
+				//центрируем изображение и открываем его, если нужно
+				function centerImage($obj,open,speed){
+					//смещение элемента слева
+					var obj_left 			= $obj.offset().left;
+					//ценнтр элемента - это смещение слева плюс 
+					//половина ширины
+					var obj_center 			= obj_left + ($obj.width()/2);
+					//центр окна
+					var center				= $(window).width()/2;
+					//насколько полоска прокрутки уже смещена
+					var currentScrollLeft 	= parseFloat($fp_thumbScroller.scrollLeft(),10);
+					//чтобы отцентрировать изображение,
+					//нужно прокрутить расстояние равное положению центра изображения минус положение центра экрана
+					//и добавить то расстояние, которое уже прокручено
+					var move 				= currentScrollLeft + (obj_center - center);
+					if(move != $fp_thumbScroller.scrollLeft()) //проверка 'easeInOutExpo'
+						$fp_thumbScroller.stop()
+										 .animate({scrollLeft: move}, speed,function(){
+							if(open)
+								enlarge($obj);
+						});
+					else if(open)
+						enlarge($obj);
+				}
+				
+				//показываем большое изображение
+				//сначала размещаем большое изображение над миниатюрой,
+				//а затем анимируем его до максимального размера, который 
+				//определяется размерами окна
+				function enlarge($obj){
+					//элемент изображения
+					var $thumb = $obj.find('img');
+					//выводим индикатор загрузки изображения
+					$fp_loading.show();
+					//предварительная загрузка изображения
+					$('<img id="fp_preview" />').load(function(){
+						var $large_img 	= $(this);
+						
+						//подтверждаем, что нет других больших изображений
+						$('#fp_preview').remove();
+						
+						$large_img.addClass('fp_preview');
+						//позиционируем изображение сверху над миниатюрой
+						//добавляем данное изображение к div fp_gallery
+						var obj_offset 	= $obj.offset();
+						$large_img.css({
+							'width'	: $thumb.width() + 'px',
+							'height': $thumb.height() + 'px',
+							'top'	: obj_offset.top + 'px',
+							'left'	: obj_offset.left + 5 + 'px'//поле 5 пикселей 
+						}).appendTo($fp_gallery);
+						//getFinalValues дает нам максимально возможные значения ширины и высоты
+						//большого изображения на основании размеров окна
+						//данные значения сохраняются для элемента с помощью jQuery.data()
+						getFinalValues($large_img);
+						var largeW 	= $large_img.data('width');
+						var largeH 	= $large_img.data('height');
+						//ширина окна, высота окна и прокрутка
+						var $window = $(window);
+						var windowW = $window.width();
+						var windowH = $window.height();
+						var windowS = $window.scrollTop();
+						//скрываем индикатор загрузки изображения
+						$fp_loading.hide();
+						//выводим покрывной слой
+						$fp_overlay.show();
+						//анимируем большое изображение
+						$large_img.stop().animate({
+							'top'		: windowH/2 -largeH/2 + windowS + 'px',
+							'left'		: windowW/2 -largeW/2 + 'px',
+							'width'		: largeW + 'px',
+							'height'	: largeH + 'px',
+							'opacity'	: 1
+						},800,function(){
+							//после анимации
+							//выводим кнопки "следующее", "предыдущее" и "закрыть"
+							showPreviewFunctions();
+						});
+					}).attr('src',$thumb.attr('alt'));
+				}
+				
+				//выводим следующее или предыдущее изображение
+				//1 - справа; 0 - слева
+				function navigate(way){
+					//показываем индикатор загрузки изображения
+					$fp_loading.show();
+					if(way==1){
+						++current;
+						var $current = $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+														.find('.content:nth-child('+parseInt(current+1)+')');
+						if($current.length == 0){
+							--current;
+							$fp_loading.hide();
+							photo_nav = true;
+							return;
+						}
+					}
+					else{
+						--current;
+						var $current = $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+														.find('.content:nth-child('+parseInt(current+1)+')');
+						if($current.length == 0){
+							++current;
+							$fp_loading.hide();
+							photo_nav = true;
+							return;
+						}
+					}
+						
+					//загружаем большое изображение в следующий/предыдущий элемент div
+					$('<img id="fp_preview" />').load(function(){
+						$fp_loading.hide();
+						var $large_img 		= $(this);
+						var $fp_preview 	= $('#fp_preview');
+						
+						//смещаем текущее изображение влево, если нажата кнопка "следующее"
+						//смещаем текущее изображение вправо, если нажата кнопка "предыдущее"
+						var animate_to 		= -$fp_preview.width();
+						var animate_from	= $(window).width();
+						if(way==0){
+							animate_to 		= $(window).width();
+							animate_from	= -$fp_preview.width();
+						}
+						
+						//теперь центрируем миниатюру 
+						centerImage($current,false,1000);
+						
+						$fp_preview.stop().animate({'left':animate_to+'px'},500,function(){
+							$(this).remove();
+							$large_img.addClass('fp_preview');
+							getFinalValues($large_img);
+							var largeW 	= $large_img.data('width');
+							var largeH 	= $large_img.data('height');
+							var $window	= $(window);
+							var windowW = $window.width();
+							var windowH = $window.height();
+							var windowS = $window.scrollTop();
+							$large_img.css({
+								'width'	: largeW+'px',
+								'height': largeH+'px',
+								'top'	: windowH/2 -largeH/2 + windowS + 'px',
+								'left'		: animate_from + 'px',
+								'opacity' 	: 1	
+							}).appendTo($fp_gallery)
+							  .stop()
+							  .animate({'left':windowW/2 -largeW/2+'px'},500,function(){photo_nav = true;});
+						});
+					}).attr('src',$current.find('img').attr('alt'));	
+				}
+				
+				//выводим кнопки "следующее", "предыдущее" и "закрыть"
+				function showPreviewFunctions(){
+					$fp_next.stop().animate({'right':'0px'},500);
+					$fp_prev.stop().animate({'left':'0px'},500);
+					$fp_close.show();
+				}
+				
+				//скрываем покрывной слой, и кнопки "следующее", "предыдущее" и "закрыть"
+				function hidePreviewFunctions(){
+					$fp_next.stop().animate({'right':'-50px'},500);
+					$fp_prev.stop().animate({'left':'-50px'},500);
+					$fp_close.hide();
+					$fp_overlay.hide();
+				}
+				
+				function getFinalValues($image){
+					var widthMargin		= 0
+					var heightMargin 	= 20;
+					var $window			= $(window);
+					var windowH      	= $window.height()-heightMargin;
+					var windowW      	= $window.width()-widthMargin;
+					var theImage     = new Image();
+					theImage.src     = $image.attr("src");
+					var imgwidth     = theImage.width;
+					var imgheight    = theImage.height;
+
+					if((imgwidth > windowW)||(imgheight > windowH)){
+						if(imgwidth > imgheight){
+							var newwidth = windowW;
+							var ratio = imgwidth / windowW;
+							var newheight = imgheight / ratio;
+							theImage.height = newheight;
+							theImage.width= newwidth;
+							if(newheight>windowH){
+								var newnewheight = windowH;
+								var newratio = newheight/windowH;
+								var newnewwidth =newwidth/newratio;
+								theImage.width = newnewwidth;
+								theImage.height= newnewheight;
+							}
+						}
+						else{
+							var newheight = windowH;
+							var ratio = imgheight / windowH;
+							var newwidth = imgwidth / ratio;
+							theImage.height = newheight;
+							theImage.width= newwidth;
+							if(newwidth>windowW){
+								var newnewwidth = windowW;
+								var newratio = newwidth/windowW;
+								var newnewheight =newheight/newratio;
+								theImage.height = newnewheight;
+								theImage.width= newnewwidth;
+							}
+						}
+					}
+					$image.data('width',theImage.width);
+					$image.data('height',theImage.height);
+				}
+				
+				//смещаем полоску прокрутки 
+				//вправо или влево на одно изображение
+				function slideThumb(way){
+					if(way==1){
+						++current;
+						var $next = $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+													 .find('.content:nth-child('+parseInt(current+1)+')');
+						if($next.length > 0)
+							centerImage($next,false,600);
+						else{
+							--current;
+							return;
+						}	
+					}
+					else{
+						--current;
+						var $prev = $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')')
+													 .find('.content:nth-child('+parseInt(current+1)+')');
+						if($prev.length > 0)
+							centerImage($prev,false,600);
+						else{
+							++current;
+							return;
+						}	
+					}					
+				}
+				
+				//когда закончено смещение,
+				//ближайшее изображение к центру должно быть отцентрировано
+				function checkClosest(){
+					var center 				= $(window).width()/2;
+					var current_distance 	= 99999999;
+					var idx					= 0;	
+					$container				= $fp_thumbScroller.find('.container:nth-child('+parseInt(gallery_idx+1)+')');
+					$container.find('.content').each(function(i){
+						var $obj 		= $(this);
+						//смещение элемента слева
+						var obj_left 	= $obj.offset().left;
+						//положение центра элемента - это смещение слева плюс половина его ширины
+						var obj_center 	= obj_left + ($obj.width()/2);
+						var distance	= Math.abs(center-obj_center);
+						if(distance < current_distance){
+							current_distance 	= distance;
+							idx					= i;
+						}	
+					});
+					var $new_current 	= $container.find('.content:nth-child('+parseInt(idx+1)+')');
+					current 			= $new_current.index();
+					centerImage($new_current,false,200);
+				}
+			});
+		</script>
+    </body>
+</html>
